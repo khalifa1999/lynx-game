@@ -1,0 +1,171 @@
+:root {
+  --background-color: #fbf8ef;
+  --color-text: #000;
+}
+
+.scroll-container {
+  height: 100%;
+  background-color: var(--background-color);
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.scroll-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 16px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 15px;
+  gap: 10px;
+}
+
+.image {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+}
+
+.image-details {
+  border: 5px solid #000;
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.heading {
+  font-size: 18px;
+  font-weight: 600;
+  padding-left: 16px;
+}
+
+.horizontal-list {
+  list-main-axis-gap: 20px;
+  padding-right: 15px;
+  padding-left: 16px;
+}
+
+.back-button {
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 100%;
+}
+
+.back-icon {
+  width: 20px;
+  aspect-ratio: 1/1;
+}
+
+.game-name {
+  font-size: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.rating-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rating-icon {
+  width: 20px;
+  aspect-ratio: 1/1;
+}
+.released-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: 1px solid #000;
+  background-color: #dbfbd8;
+
+  border-radius: 60px;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+.platforms-title {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.platforms-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.platform-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid black;
+  width: fit-content;
+  border-radius: 10px;
+  padding: 3px;
+  background-color: #dbfbd8;
+}
+
+.screenshots-title {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+.screenshot-image {
+  height: 200px;
+  border-radius: 10px;
+}
+
+.loader {
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--background-color);
+  border-top: 5px solid var(--background-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  align-self: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.card-store {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background-color: #f3f6f4;
+  border: 1px solid #000;
+  aspect-ratio: 16/9;
+  border-radius: 15px;
+  gap: 10px;
+}
