@@ -73,7 +73,7 @@ This project requires an API key from the RAWG Video Games Database to fetch gam
 
     ```typescript
     // Replace this:
-    const API_KEY = "465f2bc0ddb14f3e84a97650f5d72098";
+    const API_KEY = "425f2b4n0c3u7c0650f5d72098";
 
     // With this:
     const API_KEY = import.meta.env.VITE_RAWG_API_KEY;
